@@ -41,9 +41,12 @@ public class AddBankPushSaveButtonTest {
         Thread.sleep(2000);
         driver.findElement(By.xpath("(//input[@value=''])[4]")).clear();
         driver.findElement(By.xpath("(//input[@value=''])[4]")).sendKeys("В");
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='uiSelect_1']/div[1]/div[1]"))).click();
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='uiSelect_1']/div[2]/div/div/div[1]/div/div[2]"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath(".//*[@id='uiSelect_1']/div[1]/div[1]"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath(".//*[@id='uiSelect_1']/div[2]/div/div/div[1]/div/div[2]"))).click();
         driverWait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input.button.button--blue"))).click();
     }
     @After

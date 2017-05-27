@@ -32,12 +32,15 @@ public class UnsecsessChangePasswrd {
        Constants.login(driver);
         driver.findElement(By.xpath("html/body/header/div[1]/div/div/div/ul[2]/li[1]/div/a/img")).click();
         driver.findElement(By.linkText("Профиль")).click();
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/section[2]/div[1]/main/div[2]/dl/section[1]/h2/a"))).click();
-        Constants.scrollWithOffset(driver.findElement(By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[6]/input")), 0, 200);
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/section[2]/div[1]/main/div[2]/dl/section[1]/h2/a"))).click();
+        Constants.scrollWithOffset(driver.findElement
+                (By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[6]/input")), 0, 200);
         Thread.sleep(3000);
         driver.findElement(By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[6]/input")).click();
         driver.findElement(By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[6]/input")).clear();
-        driver.findElement(By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[6]/input")).sendKeys("123123123");
+        driver.findElement(By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[6]/input"))
+                .sendKeys("123123123");
         driver.findElement(By.name("NEW_PASSWORD_CONFIRM")).click();
         driver.findElement(By.name("NEW_PASSWORD_CONFIRM")).clear();
         driver.findElement(By.name("NEW_PASSWORD_CONFIRM")).sendKeys("123123123");

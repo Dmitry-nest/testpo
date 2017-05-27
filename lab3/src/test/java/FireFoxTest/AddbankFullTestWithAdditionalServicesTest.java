@@ -39,15 +39,21 @@ public class AddbankFullTestWithAdditionalServicesTest {
         driver.findElement(By.xpath("(//input[@value=''])[4]")).clear();
         driver.findElement(By.xpath("(//input[@value=''])[4]")).sendKeys("ро");
 
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();//choose bank
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();//choose bank
 
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[3]/div/div/div[1]/div[1]"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[3]/div/div/div[1]/div[1]"))).click();
 
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[3]/div/div/div[2]/div/div/div[1]/div/div[2]"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[3]/div/div/div[2]/div/div/div[1]/div/div[2]"))).click();
 
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[4]/div/div/span[1]/span[1]"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[4]/div/div/span[1]/span[1]"))).click();
 
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[4]/div/div/div/div[2]/div/div/div/div[1]/div[1]/div/div[1]/span"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[4]/div/div/div/div[2]/div/div/div/div[1]/div[1]/div/div[1]/span"))).click();
+
         driver.findElement(By.xpath(" html/body/div[6]/section/div/form/footer/div/input")).click();
         Thread.sleep(1000);
         try {

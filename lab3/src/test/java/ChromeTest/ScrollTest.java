@@ -10,9 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.fail;
 
-/**
- * Created by Димон on 26.05.2017.
- */
+
 public class ScrollTest {
     private WebElement webElement;
     private final Browsers BROWSER = Browsers.CHROME;

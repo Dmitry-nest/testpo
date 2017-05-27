@@ -10,9 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.fail;
 
-/**
- * Created by Димон on 26.05.2017.
- */
+
 public class CapsLoginTest {
     private static final Browsers BROWSER = Browsers.CHROME;
 
@@ -32,11 +30,12 @@ public class CapsLoginTest {
         driver.findElement(By.linkText("Вход")).click();
         Thread.sleep(2000);
         driver.findElement(By.id("login")).click();
-        driver.findElement(By.id("login")).sendKeys("LIZALUKINA");
+        driver.findElement(By.id("login")).sendKeys("");
         driver.findElement(By.id("password")).clear();
-        driver.findElement(By.id("password")).sendKeys("Liza200996");
+        driver.findElement(By.id("password")).sendKeys("");
         driver.findElement(By.name("Login")).click();
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/header/div[1]/div/div/div/ul[2]/li[1]/div/a/img")));
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/header/div[1]/div/div/div/ul[2]/li[1]/div/a/img")));
 
     }
 

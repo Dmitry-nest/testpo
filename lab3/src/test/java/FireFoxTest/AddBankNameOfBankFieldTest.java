@@ -36,11 +36,15 @@ public class AddBankNameOfBankFieldTest {
         Thread.sleep(3000);
         driver.findElement(By.xpath("html/body/section[2]/div[1]/main/div[1]/div/a[2]")).click();
         driver.findElement(By.xpath("html/body/section[2]/div[1]/aside/section[1]/div/div/div[2]/div[1]/div[2]/a")).click();
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='uiSelect_1']/div[1]/div[1]"))).click();
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='uiSelect_1']/div[2]/div/div/div[1]/div/div[2]"))).click();
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input.button.button--blue"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath(".//*[@id='uiSelect_1']/div[1]/div[1]"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath(".//*[@id='uiSelect_1']/div[2]/div/div/div[1]/div/div[2]"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.cssSelector("input.button.button--blue"))).click();
         try {
-            assertEquals("Необходимо выбрать банк", driver.findElement(By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div[2]")));
+            assertEquals("Необходимо выбрать банк", driver.findElement
+                    (By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div[2]")));
         } catch (Error e) {
             verificationErrors.append(e.toString());
         }

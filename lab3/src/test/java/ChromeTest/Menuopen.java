@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class Menuopen {
@@ -28,7 +27,8 @@ public class Menuopen {
         Constants.OpenBrowser();
         String buff = "Калькулятор вкладов";
         driver.findElement(By.xpath("//nav[@id='main-menu']/div[2]/div/span/span")).click();
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/section[1]/nav/div[2]/nav[1]/div[3]/ul/li[17]/a"))).getText().equals(buff);
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/section[1]/nav/div[2]/nav[1]/div[3]/ul/li[17]/a"))).getText().equals(buff);
     }
 
     @After

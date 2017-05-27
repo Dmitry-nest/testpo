@@ -11,9 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-/**
- * Created by di452 on 26.05.2017.
- */
+
 public class AddbankFullTestWithAdditionalServicesTest {
     private final Browsers BROWSER = Browsers.CHROME;
     private WebDriver driver;
@@ -39,9 +37,11 @@ public class AddbankFullTestWithAdditionalServicesTest {
         driver.findElement(By.xpath("(//input[@value=''])[4]")).clear();
         driver.findElement(By.xpath("(//input[@value=''])[4]")).sendKeys("ро");
 
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();//choose bank
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();//choose bank
 
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[3]/div/div/div[1]/div[1]"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[3]/div/div/div[1]/div[1]"))).click();
 
         driverWait.until(ExpectedConditions.presenceOfElementLocated
                 (By.xpath("html/body/div[6]/section/div/form/div/div[3]/div/div/div[2]/div/div/div[1]/div/div[2]"))).click();
@@ -55,7 +55,8 @@ public class AddbankFullTestWithAdditionalServicesTest {
         driver.findElement(By.xpath(" html/body/div[6]/section/div/form/footer/div/input")).click();
         Thread.sleep(1000);
         try {
-            assertEquals("1", driver.findElement(By.xpath("html/body/section[2]/div[1]/aside/section[1]/div/div/div[2]/div[1]/div[1]/span   ")).getText());
+            assertEquals("1", driver.findElement
+                    (By.xpath("html/body/section[2]/div[1]/aside/section[1]/div/div/div[2]/div[1]/div[1]/span   ")).getText());
         } catch (Error e) {
             verificationErrors.append(e.toString());
         }

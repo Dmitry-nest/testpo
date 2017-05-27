@@ -40,7 +40,7 @@ public class Registration {
         driver.findElement(By.name("USER_CONFIRM_PASSWORD")).clear();
         driver.findElement(By.name("USER_CONFIRM_PASSWORD")).sendKeys("Qaz123wsx");
         driver.findElement(By.name("PERSONAL_MOBILE")).clear();
-        driver.findElement(By.name("PERSONAL_MOBILE")).sendKeys("891129 2445");
+        driver.findElement(By.name("PERSONAL_MOBILE")).sendKeys("8911292445");
         driver.findElement(By.name("USER_EMAIL")).clear();
         driver.findElement(By.name("USER_EMAIL")).sendKeys("uhzx2z@vmani.com");
         driver.findElement(By.name("captcha_word")).clear();

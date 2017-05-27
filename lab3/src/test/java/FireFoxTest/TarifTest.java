@@ -36,10 +36,12 @@ public class TarifTest {
         driver.findElement(By.linkText("Мобильная связь и интернет")).click();
         driver.findElement(By.xpath("html/body/div[1]/div[1]/div[1]/section[1]/div/a[1]/div[1]")).click();
         driver.findElement(By.xpath("html/body/div[1]/div[2]/main/section[1]/ul/li[1]/div/a")).click();
-        driver.findElement(By.xpath("html/body/div[1]/div[1]/section/div[2]/div/div/form/div/div[1]/input")).sendKeys("9817244950");
+        driver.findElement(By.xpath("html/body/div[1]/div[1]/section/div[2]/div/div/form/div/div[1]/input"))
+                .sendKeys("");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         try {
-            assertEquals("Если возможны более выгодные тарифы, стоимость услуги составит 149 руб.", driver.findElement(By.xpath("html/body/div[1]/div[1]/section/div[2]/p[3]")).getText());
+            assertEquals("Если возможны более выгодные тарифы, стоимость услуги составит 149 руб.",
+                    driver.findElement(By.xpath("html/body/div[1]/div[1]/section/div[2]/p[3]")).getText());
         } catch (Error e) {
             verificationErrors.append(e.toString());
         }

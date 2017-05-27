@@ -33,14 +33,16 @@ public class AddBankOpinionFieldTest {
         Constants.login(driver);
         driver.findElement(By.xpath("html/body/header/div[1]/div/div/div/ul[2]/li[1]/div/a/img")).click();
         Thread.sleep(2000);
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/section[2]/div[1]/main/div[1]/div/a[2]"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/section[2]/div[1]/main/div[1]/div/a[2]"))).click();
         // driver.findElement(By.linkText("Профиль")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("html/body/section[2]/div[1]/aside/section[1]/div/div/div[2]/div[1]/div[2]/a")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("(//input[@value=''])[4]")).clear();
         driver.findElement(By.xpath("(//input[@value=''])[4]")).sendKeys("В");
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();
         driverWait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input.button.button--blue"))).click();
         try {
             assertEquals("Выберите отношение", driverWait.until(ExpectedConditions.presenceOfElementLocated(

@@ -35,13 +35,15 @@ public class ChangeNameTest {
         driver.findElement(By.linkText("Профиль")).click();
         driver.findElement(By.cssSelector("h2 > a.edit")).click();
         Thread.sleep(3000);
-        Constants.scrollWithOffset(driver.findElement(By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[2]/input")), 0, 50);
+        Constants.scrollWithOffset(driver.findElement
+                (By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[2]/input")), 0, 50);
         driver.findElement(By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[2]/input")).clear();
         driver.findElement(By.xpath("html/body/section[2]/div[1]/div/form/div[2]/dl[1]/dd[2]/input")).sendKeys("Анна");
         Constants.scrollWithOffset(driver.findElement(By.name("save")), 0, 200);
         driver.findElement(By.name("save")).click();
         try {
-            assertEquals("Анна Лукина", driver.findElement(By.xpath("html/body/section[2]/div[1]/main/section/div[2]/div[1]")).getText());
+            assertEquals("Анна Лукина", driver.findElement
+                    (By.xpath("html/body/section[2]/div[1]/main/section/div[2]/div[1]")).getText());
         } catch (Error e) {
             verificationErrors.append(e.toString());
         }

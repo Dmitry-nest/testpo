@@ -1,5 +1,6 @@
 package ChromeTest; /**
  * Created by di452 on 23.05.2017.
+ Thread.sleep - using for close pop-up windows
  */
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -21,9 +22,9 @@ class Constants {
         driver.findElement(By.linkText("Вход")).click();
         Thread.sleep(2000);
         driver.findElement(By.id("login")).clear();
-        driver.findElement(By.id("login")).sendKeys("lizalukina");
+        driver.findElement(By.id("login")).sendKeys("");
         driver.findElement(By.id("password")).clear();
-        driver.findElement(By.id("password")).sendKeys("Liza200996");
+        driver.findElement(By.id("password")).sendKeys("");
         driver.findElement(By.name("Login")).click();
         Thread.sleep(5000);
     }

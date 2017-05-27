@@ -10,9 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static junit.framework.TestCase.fail;
 
-/**
- * Created by Димон on 25.05.2017.
- */
+
 public class AddBlog {
     private WebDriver driver;
     private WebDriverWait driverWait;

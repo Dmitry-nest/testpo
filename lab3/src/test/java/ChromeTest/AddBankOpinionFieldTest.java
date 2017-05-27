@@ -11,9 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-/**
- * Created by di452 on 26.05.2017.
- */
+
 public class AddBankOpinionFieldTest {
     private final Browsers BROWSER = Browsers.CHROME;
     private WebDriver driver;
@@ -40,7 +38,10 @@ public class AddBankOpinionFieldTest {
         Thread.sleep(2000);
         driver.findElement(By.xpath("(//input[@value=''])[4]")).clear();
         driver.findElement(By.xpath("(//input[@value=''])[4]")).sendKeys("В");
-        driverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();
+
+        driverWait.until(ExpectedConditions.presenceOfElementLocated
+                (By.xpath("html/body/div[6]/section/div/form/div/div[1]/div/div/div/span[2]/div/span/div[1]/p"))).click();
+
         driverWait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input.button.button--blue"))).click();
         try {
             assertEquals("Выберите отношение", driverWait.until(ExpectedConditions.presenceOfElementLocated(
