@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html class="gte-ie9 env-js env-flexbox env-touch env-rgba env-boxshadow env-opacity env-cssanimations env-csscolumns env-csstransforms env-localstorage env-svg" prefix="ya: http://webmaster.yandex.ru/vocabularies/" style="">
+<head>
+<body class="modern-design">
+<noindex>
+<header class="header">
+<noscript> <div class="layout-wrapper ui-alert ui-alert--danger"> <span class="ui-alert__icon alert-icon alert-icon--danger"></span> Внимание! В вашем браузере отключено выполнение JavaScript. Возможно неоптимальное отображения ряда элементов сайта и недоступность удобного функционала. </div> </noscript>
+<section class="header-hor-banner" data-test="custom-advertising-block">
+<div class="padding-bottom-x-small">
+<div class="header__bar">
+<div class="layout-wrapper">
+<div class="header__menu">
+<ul class="header__menu__left">
+<li class="menu__item item js-menu__item" data-test="header-select-region">
+<li class="menu__item js-menu__item">
+<li class="menu__item js-menu__item">
+<li class="menu__item js-menu__item">
+<li class="menu__item header__menu__clocks">
+<div class="item__node">24 мая, 00:26</div>
+</li>
+</ul>
+<ul class="header__menu__right">
+<script>
+</div>
+</div>
+</div>
+</div>
+<div class="header__content">
+</header>
+<section class="layout-wrapper position-relative margin-bottom-default" style="min-height: 0px;">
+<section class="layout-wrapper position-relative margin-bottom-default border-default bg-white">
+<div class="layout-wrapper margin-bottom-default">
+<div class="layout-wrapper border-default bg-white">
+<footer class="layout-wrapper footer">
+<div id="overlay" onclick="closeOverlay();" style="display: none;"></div>
+<div id="infoBox" style="display: none;"></div>
+<script src="/static/common/bower/requirejs/require.js?_v=0">
+<script src="/static/common/requirejs-config.js?_v=3ce2d3de08">
+<script src="/bitrix/js/main/core/core.js?_v=1495538894">
+<script src="/static/common/common.js?_v=958dfde50d">
+<script src="/static/common/bankiru-layout.js?_v=aa681e1bb3">
+<script src="/_lib/jw_flv_player/swfobject.js?_v=1495538891">
+<script>
+<div id="scrollToTop" class="scroll-to-top" title="Наверх" style="display: none;">
+<div class="ui-popup__overlay"></div>
+<div class="ui-popup-holder ui-popup-holder--centered animated fadeInDown">
+<div id="fb-root" class=" fb_reset">
+</body>
+</html>
